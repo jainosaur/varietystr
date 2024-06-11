@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PERENA VARIETY STORE</title>
+	<link rel="stylesheet" href="varietystore.css">
+</head>
+<body>
+
+<div id="container">
+<img src="varietystore.jpg">
+<br>
+<button onclick="showAll()">SHOP PRODUCTS</button>
+<button onclick="showJeans()">JEANS</button>
+<button onclick="showShirt()">T-SHIRT</button>
+<button onclick="showPerfume()">PERFUME</button>
+<button onclick="showSando()">SANDO</button>
+<button onclick="showToys()">TOYS</button>
+<button onclick="showCheckout()">CHECK-OUT</button>
+<button onclick="openStocksWindow()">STOCKS</button> 
+
+<div class="all">
+	<img src="jeans-1.jpg" alt="skinny jeans">
+	<img src="jeans-2.jpg" alt="baggy jeans">
+	<img src="jeans-3.jpg" alt="ripped jeans">
+	<img src="jeans-4.jpg" alt="classic jeans">
+	
+	<img src="shirt-1.jpg" alt="round neck">
+	<img src="shirt-2.jpg" alt="v neck">
+	<img src="shirt-3.jpg" alt="knitted">
+	<img src="shirt-4.jpg" alt="seethrough">
+
+	<img src="rose-perf.jpg" alt="sn rose">
+	<img src="strawberry-perf.jpg" alt="sn strawberry">
+	<img src="almond-perf.jpg" alt="sn almond">
+	<img src="cucumber-perf.jpg" alt="sn cucumber">
+
+	<img src="sando-plain.jpg" alt="plain sando">
+	<img src="sando-drifit.jpg" alt="drifit sando">
+	<img src="sando-muscletee.jpg" alt="muscle tee">
+	<img src="sando-beach.jpg" alt="beach sando">
+
+	<img src="toy-stuff.jpg" alt="stuff toy">
+	<img src="toy-doll.jpg" alt="doll">
+	<img src="toy-cars.jpg" alt="cars">
+	<img src="toy-dino.jpg" alt="dinosaur">
+</div>
+
+<div class="jeans">
+	<H2>JEANS SECTION</H2>
+	<label class="check1" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="550">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="jeans-1.jpg" alt="Skinny Jeans">
+		<div class="image-text">Skinny Jeans - Php 550.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check1" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="850">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="jeans-2.jpg" alt="Baggy Jeans">
+		<div class="image-text">Baggy Jeans - Php 850.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check1" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="700">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="jeans-3.jpg" alt="Ripped Jeans">
+		<div class="image-text">Ripped Jeans - Php 700.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check1" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="500">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="jeans-4.jpg" alt="Classic Jeans">
+		<div class="image-text">Classic Jeans - Php 500.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+</div>
+
+<div class="shirt">
+	<H2>T-SHIRT SECTION</H2>
+	<label class="check2" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="250">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="shirt-1.jpg" alt="round neck">
+		<div class="image-text">Round Neck T-Shirt - Php 250.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check2" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="250">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="shirt-2.jpg" alt="v shape">
+		<div class="image-text">V-shaped T-Shirt - Php 250.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check2" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="450">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="shirt-3.jpg" alt="knit shirt">
+		<div class="image-text">Knitted T-Shirt - Php 450.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check2" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="600">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="shirt-4.jpg" alt="STS shirt">
+		<div class="image-text">See Through Summer T-Shirt - Php 600.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+</div>
+
+<div class="perf">
+	<H2>PERFUME SECTION</H2>
+	<label class="check3" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="250">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="rose-perf.jpg" alt="SN Rose">
+		<div class="image-text">Rose Fine - Php 250.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check3" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="250">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="strawberry-perf.jpg" alt="SPC">
+		<div class="image-text">Strawberry Pound Cake - Php 250.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check3" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="250">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="almond-perf.jpg" alt="A&V">
+		<div class="image-text">Almond and Vanilla - Php 250.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check3" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="250">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="cucumber-perf.jpg" alt="CLF">
+		<div class="image-text">Cucumber Lemon Fine - Php 250.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+</div>
+
+<div class="sando">
+	<H2>SANDO SECTION</H2>
+	<label class="check4" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="180">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="sando-plain.jpg" alt="plain sando">
+		<div class="image-text">Plain Sando - Php 180.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check4" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="300">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="sando-drifit.jpg" alt="drifit">
+		<div class="image-text">Drifit Sando - Php300.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check4" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="250">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="sando-muscletee.jpg" alt="muscle tee">
+		<div class="image-text">Muscle Tee - Php 250.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check3" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="280">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="sando-beach.jpg" alt="beach sando">
+		<div class="image-text">Beach Sando - Php 280.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+</div>
+
+<div class="toys">
+	<H2>TOYS SECTION</H2>
+	<label class="check5" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="620">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="toy-stuff.jpg" alt="TST">
+		<div class="image-text">Teddy Stuff Toy - Php 620.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check5" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="480">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="toy-doll.jpg" alt="doll">
+		<div class="image-text">Baby Doll - Php 480.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check5" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="400">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="toy-cars.jpg" alt="cars">
+		<div class="image-text">Cars Set - Php 400.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+	<label class="check3" data-stock="20">
+		<input type="checkbox" id="imageCheckbox" class="checkbox" value="520">
+		<input type="number" class="quantity" value="1" min="1" max="10">
+		<img src="toy-dino.jpg" alt="dino">
+		<div class="image-text">Dinosaur Set - Php 520.00</div>
+		<div class="stock">Stock: 20</div>
+		<button onclick="addToCart(this)">Add to Cart</button>
+		<button onclick="cancelOrder(this)">Cancel Order</button>
+	</label>
+</div>
+
+<div class="checkout">
+	<h3>Your TOTAL BILL is:</h3> 
+	<p style="font-family: Arial Black; font-size: 100px;text-align: center;"> ₱ <span id='total' style="font-family: Arial Black; font-size: 100px;text-align: center;"> 0</span>.00 </p>
+	<button onclick="applyDiscount(0.2)">SENIOR 20%</button>
+	<button onclick="applyDiscount(0.3)">PWD 30%</button>
+	<button onclick="applyDiscount(0.1)">STUDENT 10%</button>
+    <button onclick="clearSelection()">CLEAR SELECTION</button>
+	</div>
+</div>
+
+<script src="varietystore.js"></script>
+<script>
+    function openStocksWindow() {
+        // Open a new window
+        var stocksWindow = window.open("", "Stocks", "width=400,height=300");
+
+        // HTML content for the new window
+        var stocksWindowContent = `
+            <html>
+            <head>
+                <title>Stocks</title>
+                <style>
+        			body {
+            			font-family: Arial, sans-serif;
+           				margin: 20px;
+       		 		}
+        			h2 {
+            			margin-bottom: 10px;
+        			}
+        			select, input[type="number"] {
+            			width: 100%;
+            			padding: 8px;
+            			margin-bottom: 10px;
+            			box-sizing: border-box;
+        			}
+        			label {
+        			    display: block;
+        			    margin-bottom: 5px;
+        			}
+        			button {
+        			    padding: 10px 20px;
+        			    background-color: #4CAF50;
+        			    color: white;
+        			    border: none;
+        			    cursor: pointer;
+        			}
+        			button:hover {
+        			    background-color: #45a049;
+        			}
+    			</style>
+            </head>
+            <body>
+                <h2>Select an item and add stocks:</h2>
+                <select id="itemSelect">
+                    <option value="jeans">Jeans</option>
+                    <option value="shirt">T-Shirt</option>
+                    <option value="perfume">Perfume</option>
+                    <option value="sando">Sando</option>
+                    <option value="toys">Toys</option>
+                </select>
+                <br><br>
+                <label for="stockInput">Number of Stocks:</label>
+                <input type="number" id="stockInput" min="0" value="0">
+                <br><br>
+                <button onclick="addStocks()">Add Stocks</button>
+                <button onclick="closeWindow()">Close</button>
+            </body>
+            </html>
+        `;
+
+        stocksWindow.document.write(stocksWindowContent);
+
+        // Function to add stocks to the main window
+        stocksWindow.addStocks = function() {
+            var selectedItem = document.getElementById("itemSelect").value;
+            var stockInput = document.getElementById("stockInput").value;
+            // You can implement logic here to update stocks in the main window
+            alert("Selected item: " + selectedItem + ", Stocks added: " + stockInput);
+        };
+
+        // Function to close the window
+        stocksWindow.closeWindow = function() {
+            stocksWindow.close();
+        };
+    }
+</script>
+
+
+</body>
+</html>
