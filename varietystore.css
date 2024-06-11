@@ -1,0 +1,233 @@
+#container{
+	margin: auto;
+	padding:10px;
+	border: 1px solid;
+	border-color: black;
+	text-align: center;
+	height: 900px;
+	width: 1350px;
+	background-image: url("bgimage.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+input[type="checkbox"]{
+	height: 30px;
+	width: 30px;
+	position: relative;
+	top: 30px;
+}
+
+input[type="number"]{
+	height: 24px;
+	width: 50px;
+	position: relative;
+	top: 33px;
+}
+.check1{
+	display:inline-flex;
+	margin-right: 10px;
+	margin-left: 60px;
+}
+.check2{
+	display:inline-flex;
+	margin-right: 10px;
+	margin-left: 60px;
+}
+.check3{
+	display:inline-flex;
+	margin-right: 10px;
+	margin-left: 60px;
+}
+.check4{
+	display:inline-flex;
+	margin-right: 10px;
+	margin-left: 60px;
+}
+.check5{
+	display:inline-flex;
+	margin-right: 10px;
+	margin-left: 60px;
+}
+
+.all img {
+	width: 130px;
+	height: 130px;
+	margin: 25px;
+	border-radius: 15px;
+	border: 2px solid pink;
+	box-shadow: 2px 3px gray;
+}
+
+.jeans img{
+	width: 150px;
+	height: 200px;
+	margin: 30px;
+	border-radius: 15px;
+	border: 2px solid pink;
+	box-shadow: 2px 3px gray;
+}
+
+.shirt img{
+	width: 150px;
+	height: 200px;
+	margin: 30px;
+	border-radius: 15px;
+	border: 2px solid pink;
+	box-shadow: 2px 3px gray;
+}
+
+.perf img{
+	width: 150px;
+	height: 200px;
+	margin: 30px;
+	border-radius: 15px;
+	border: 2px solid pink;
+	box-shadow: 2px 3px gray;
+}
+.sando img{
+	width: 150px;
+	height: 200px;
+	margin: 30px;
+	border-radius: 15px;
+	border: 2px solid pink;
+	box-shadow: 2px 3px gray;
+}
+.toys img {
+	width: 150px;
+	height: 200px;
+	margin: 30px;
+	border-radius: 15px;
+	border: 2px solid pink;
+	box-shadow: 2px 3px gray;
+}
+
+img {
+	max-width: 300px;
+	max-height: 200px;
+	position: relative;
+	text-align: center;
+}
+.all{
+	text-align: center;
+	display: none;
+}
+.jeans{
+	text-align: left;
+	display: none;
+}
+.shirt{
+	text-align: left;
+	display: none;
+}
+.perf{
+	text-align: left;
+	display: none;
+}
+.sando{
+	text-align: left;
+	display: none;
+}
+.toys{
+	text-align: left;
+	display: none;
+}
+.checkout{
+	text-align: center;
+	display: none;
+
+}
+button{
+	background-color: mistyrose;
+	width: 13%;
+	height: 50px;
+	cursor: pointer;
+	font-family: "Arial Black";
+	font-size: 13px;
+}
+button:hover{
+	background-color: orange;
+	color: white;
+}
+h1{
+	font-family: "Ink Free";
+	color: hotpink;
+	font-size: 50px;
+	font-weight:bolder;
+}
+h2{
+	padding-top: 20px;
+	font-family: "Times New Roman";
+	font-size: 20px;
+	font-style: italic;
+	text-align: center;
+}
+h3{
+	padding-top: 30px;
+	font-family: "Times New Roman";
+	font-size: 30px;
+	font-style: italic;
+	text-align: center;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Kristen ITC";
+  font-weight: bold;
+  
+  background-color: rgba(170, 51, 106, 0.5); 
+  color: white;
+  visibility: hidden; 
+  opacity: 0; 
+  transition: opacity 0.5s, visibility 0.5s;
+  padding: 10px;
+}
+.check1 {
+  position: relative;
+  display: inline-flex;
+}
+.check1:hover .image-text {
+  visibility: visible; 
+  opacity: 1; 
+}
+.check2 {
+  position: relative;
+  display: inline-flex;
+}
+.check2:hover .image-text {
+  visibility: visible; 
+  opacity: 1; 
+}
+.check3 {
+  position: relative;
+  display: inline-flex;
+}
+.check3:hover .image-text {
+  visibility: visible; 
+  opacity: 1; 
+}
+.check4 {
+  position: relative;
+  display: inline-flex;
+}
+.check4:hover .image-text {
+  visibility: visible; 
+  opacity: 1; 
+}
+.check5 {
+  position: relative;
+  display: inline-flex;
+}
+.check5:hover .image-text {
+  visibility: visible;
+  opacity: 1; 
+}
+
+.stock {
+  font-size: 20px;
+  color: white;
+}
